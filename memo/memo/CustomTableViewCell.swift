@@ -6,18 +6,17 @@
 //
 
 import UIKit
+import SnapKit
 
 class CustomTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    let titleLabel = UILabel()
+    
+    func makeUI() {
+        self.contentView.addSubview(titleLabel)
+        titleLabel.text = "test"
+        
+        titleLabel.snp.makeConstraints {
+            $0.edges.equalTo(self.contentView.safeAreaLayoutGuide.snp.edges)
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
