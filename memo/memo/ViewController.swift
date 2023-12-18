@@ -24,7 +24,9 @@ class ViewController: UIViewController {
     }
 
     @objc func addEnterButtonClicked() {
-        
+        let nextView = UINavigationController(rootViewController: SecondViewController())
+        nextView.modalPresentationStyle = .fullScreen
+        self.present(nextView, animated: true)
     }
 }
 
