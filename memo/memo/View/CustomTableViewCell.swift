@@ -11,9 +11,11 @@ import SnapKit
 class CustomTableViewCell: UITableViewCell {
     private let titleLabel = UILabel()
     
-    func makeUI() {
+    func initSetup() {
         self.contentView.addSubview(titleLabel)
-        
+    }
+    
+    func setConstraints() {
         titleLabel.snp.makeConstraints {
             $0.edges.equalTo(self.contentView.safeAreaLayoutGuide.snp.edges)
         }

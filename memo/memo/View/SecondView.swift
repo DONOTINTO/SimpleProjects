@@ -12,12 +12,15 @@ class SecondView: UIView {
 
     let tableView = UITableView()
     
-    func makeUI() {
-        self.backgroundColor = .white
+    func initSetup() {
         self.addSubview(tableView)
     }
     
-    func constraintView() {
+    func makeUI() {
+        self.backgroundColor = .white
+    }
+    
+    func setConstraints() {
         tableView.snp.makeConstraints {
             $0.edges.equalTo(self.safeAreaLayoutGuide.snp.edges)
         }

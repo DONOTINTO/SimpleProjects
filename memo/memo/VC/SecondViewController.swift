@@ -8,35 +8,36 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-    let myView = SecondView()
+    let mainView = SecondView()
+    
+    override func loadView() {
+        self.view = mainView
+    }
     
     override func viewWillAppear(_ animated: Bool) {
-        myView.tableView.reloadData()
+        mainView.tableView.reloadData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myView.makeUI()
-        myView.constraintView()
+        mainView.initSetup()
+        mainView.makeUI()
+        mainView.setConstraints()
         
-        self.view = myView
-        self.setNavigationUI()
-        self.setupUI()
+        self.initSetup()
+        self.navigationUI()
     }
     
-    func setNavigationUI() {
+    func initSetup() {
+        mainView.tableView.dataSource = self
+        mainView.tableView.delegate = self
+        
+        mainView.tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "CustomCell")
+    }
+    
+    func navigationUI() {
         navigationItem.title = "메모장"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: .add,
-                                                                 style: .plain,
-                                                                 target: self,
-                                                                 action: #selector(rightButtonClicked))
-    }
-    
-    func setupUI() {
-        myView.tableView.dataSource = self
-        myView.tableView.delegate = self
-        
-        myView.tableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "CustomCell")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: .add, style: .plain, target: self, action: #selector(rightButtonClicked))
     }
     
     @objc func rightButtonClicked() {
@@ -52,10 +53,11 @@ extension SecondViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = myView.tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
-        cell.makeUI()
-        
+        guard let cell = mainView.tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
         let text = Storage.shared.getData(idx: indexPath.row)
+        
+        cell.initSetup()
+        cell.setConstraints()
         cell.setText(text)
         
         return cell
@@ -64,7 +66,7 @@ extension SecondViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             Storage.shared.remove(idx: indexPath.row)
-            myView.tableView.deleteRows(at: [indexPath], with: .left)
+            mainView.tableView.deleteRows(at: [indexPath], with: .left)
         }
     }
     
