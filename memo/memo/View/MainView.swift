@@ -12,15 +12,19 @@ class MainView: UIView {
     
     let enterButton = UIButton()
     
-    func makeUI() {
+    func initSetup() {
         self.backgroundColor = .white
         self.addSubview(enterButton)
-        
+    }
+    
+    func makeUI() {
         enterButton.setTitle("Enter", for: .normal)
         enterButton.setTitleColor(.white, for: .normal)
         enterButton.backgroundColor = .black
         enterButton.layer.cornerRadius = 10
-        
+    }
+    
+    func setConstraints() {
         enterButton.snp.makeConstraints {
             $0.height.equalTo(50)
             $0.width.equalTo(120)
