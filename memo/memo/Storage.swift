@@ -20,6 +20,12 @@ class Storage {
         Storage.shared.text.append(data)
     }
     
+    func editData(_ text: String?, idx: Int) {
+        guard let data = text else { return }
+        if data == "" { return }
+        Storage.shared.text[idx] = data
+    }
+    
     func count() -> Int {
         return Storage.shared.text.count
     }

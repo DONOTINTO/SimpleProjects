@@ -9,6 +9,7 @@ import UIKit
 
 class MemoViewController: UIViewController {
     let myView = MemoView()
+    var idx: Int? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +19,13 @@ class MemoViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonClicked))
     }
     
+    func setIndex(_ idx: Int) {
+        self.idx = idx
+    }
+    
     @objc func doneButtonClicked() {
         let text = myView.mainTextField.text
-        Storage.shared.addData(text)
+        idx == nil ? Storage.shared.addData(text) : Storage.shared.editData(text, idx: self.idx!)
         
         self.navigationController?.popViewController(animated: true)
     }

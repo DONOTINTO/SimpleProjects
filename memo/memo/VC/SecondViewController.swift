@@ -61,10 +61,6 @@ extension SecondViewController: UITableViewDataSource {
         return cell
     }
     
-    // func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
-    //     return .delete
-    // }
-    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             Storage.shared.remove(idx: indexPath.row)
@@ -73,11 +69,16 @@ extension SecondViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let nextVC = MemoViewController()
+        nextVC.idx = indexPath.row
+        nextVC.myView.mainTextField.text = Storage.shared.getData(idx: indexPath.row)
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
 
 extension SecondViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 }
