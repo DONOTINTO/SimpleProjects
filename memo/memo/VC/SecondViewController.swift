@@ -10,6 +10,10 @@ import UIKit
 class SecondViewController: UIViewController {
     let myView = SecondView()
     
+    override func viewWillAppear(_ animated: Bool) {
+        myView.tableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         myView.makeUI()
@@ -36,21 +40,36 @@ class SecondViewController: UIViewController {
     }
     
     @objc func rightButtonClicked() {
-        print("123")
+        let nextVC = MemoViewController()
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
 
 }
 
 extension SecondViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return Storage.shared.count()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = myView.tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as? CustomTableViewCell else { return UITableViewCell() }
         cell.makeUI()
         
+        let text = Storage.shared.getData(idx: indexPath.row)
+        cell.setText(text)
+        
         return cell
+    }
+    
+    // func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    //     return .delete
+    // }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            Storage.shared.remove(idx: indexPath.row)
+            myView.tableView.deleteRows(at: [indexPath], with: .left)
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

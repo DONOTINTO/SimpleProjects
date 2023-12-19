@@ -18,6 +18,9 @@
 		AC8F87602B3033B900A3D255 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F875F2B3033B900A3D255 /* SecondViewController.swift */; };
 		AC8F87622B30382200A3D255 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F87612B30382200A3D255 /* SecondView.swift */; };
 		AC8F87642B30396E00A3D255 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F87632B30396E00A3D255 /* CustomTableViewCell.swift */; };
+		AC8F87682B308F6100A3D255 /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F87672B308F6100A3D255 /* MemoViewController.swift */; };
+		AC8F876A2B308FCC00A3D255 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F87692B308FCC00A3D255 /* MemoView.swift */; };
+		AC8F876C2B3091E500A3D255 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8F876B2B3091E500A3D255 /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		AC8F875F2B3033B900A3D255 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		AC8F87612B30382200A3D255 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		AC8F87632B30396E00A3D255 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AC8F87672B308F6100A3D255 /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		AC8F87692B308FCC00A3D255 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		AC8F876B2B3091E500A3D255 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,18 +72,37 @@
 		AC8F87412B30278E00A3D255 /* memo */ = {
 			isa = PBXGroup;
 			children = (
+				AC8F87662B308F2900A3D255 /* View */,
+				AC8F87652B308F0E00A3D255 /* VC */,
 				AC8F87422B30278E00A3D255 /* AppDelegate.swift */,
 				AC8F87442B30278E00A3D255 /* SceneDelegate.swift */,
-				AC8F87462B30278E00A3D255 /* ViewController.swift */,
 				AC8F874B2B30278F00A3D255 /* Assets.xcassets */,
 				AC8F874D2B30278F00A3D255 /* LaunchScreen.storyboard */,
 				AC8F87502B30278F00A3D255 /* Info.plist */,
-				AC8F87562B302AAD00A3D255 /* MainView.swift */,
-				AC8F875F2B3033B900A3D255 /* SecondViewController.swift */,
-				AC8F87612B30382200A3D255 /* SecondView.swift */,
-				AC8F87632B30396E00A3D255 /* CustomTableViewCell.swift */,
+				AC8F876B2B3091E500A3D255 /* Storage.swift */,
 			);
 			path = memo;
+			sourceTree = "<group>";
+		};
+		AC8F87652B308F0E00A3D255 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				AC8F87462B30278E00A3D255 /* ViewController.swift */,
+				AC8F875F2B3033B900A3D255 /* SecondViewController.swift */,
+				AC8F87672B308F6100A3D255 /* MemoViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		AC8F87662B308F2900A3D255 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC8F87562B302AAD00A3D255 /* MainView.swift */,
+				AC8F87612B30382200A3D255 /* SecondView.swift */,
+				AC8F87692B308FCC00A3D255 /* MemoView.swift */,
+				AC8F87632B30396E00A3D255 /* CustomTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +182,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8F87682B308F6100A3D255 /* MemoViewController.swift in Sources */,
+				AC8F876A2B308FCC00A3D255 /* MemoView.swift in Sources */,
 				AC8F87622B30382200A3D255 /* SecondView.swift in Sources */,
 				AC8F87472B30278E00A3D255 /* ViewController.swift in Sources */,
 				AC8F87572B302AAD00A3D255 /* MainView.swift in Sources */,
@@ -164,6 +191,7 @@
 				AC8F87432B30278E00A3D255 /* AppDelegate.swift in Sources */,
 				AC8F87602B3033B900A3D255 /* SecondViewController.swift in Sources */,
 				AC8F87452B30278E00A3D255 /* SceneDelegate.swift in Sources */,
+				AC8F876C2B3091E500A3D255 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

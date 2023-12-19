@@ -9,14 +9,17 @@ import UIKit
 import SnapKit
 
 class CustomTableViewCell: UITableViewCell {
-    let titleLabel = UILabel()
+    private let titleLabel = UILabel()
     
     func makeUI() {
         self.contentView.addSubview(titleLabel)
-        titleLabel.text = "test"
         
         titleLabel.snp.makeConstraints {
             $0.edges.equalTo(self.contentView.safeAreaLayoutGuide.snp.edges)
         }
+    }
+    
+    func setText(_ text: String) {
+        titleLabel.text = text
     }
 }
