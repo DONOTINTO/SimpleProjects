@@ -73,7 +73,7 @@ extension SecondViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let nextVC = MemoViewController()
         nextVC.idx = indexPath.row
-        nextVC.myView.mainTextField.text = Storage.shared.getData(idx: indexPath.row)
+        nextVC.mainView.mainTextField.text = Storage.shared.getData(idx: indexPath.row)
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }

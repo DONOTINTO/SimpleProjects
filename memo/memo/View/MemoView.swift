@@ -12,9 +12,15 @@ class MemoView: UIView {
 
     let mainTextField = UITextView()
     
-    func makeUI() {
+    func initSetup() {
         self.addSubview(mainTextField)
+    }
+    
+    func makeUI() {
         backgroundColor = .white
+    }
+    
+    func setConstraints() {
         mainTextField.snp.makeConstraints {
             $0.edges.equalTo(self.safeAreaLayoutGuide.snp.edges)
         }

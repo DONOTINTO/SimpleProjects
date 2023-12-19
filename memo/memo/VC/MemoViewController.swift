@@ -8,14 +8,23 @@
 import UIKit
 
 class MemoViewController: UIViewController {
-    let myView = MemoView()
+    let mainView = MemoView()
     var idx: Int? = nil
+    
+    override func loadView() {
+        self.view = mainView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myView.makeUI()
-        self.view = myView
+        mainView.initSetup()
+        mainView.makeUI()
+        mainView.setConstraints()
         
+        self.setAction()
+    }
+    
+    func setAction() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonClicked))
     }
     
@@ -24,10 +33,9 @@ class MemoViewController: UIViewController {
     }
     
     @objc func doneButtonClicked() {
-        let text = myView.mainTextField.text
+        let text = mainView.mainTextField.text
         idx == nil ? Storage.shared.addData(text) : Storage.shared.editData(text, idx: self.idx!)
         
         self.navigationController?.popViewController(animated: true)
     }
-
 }
