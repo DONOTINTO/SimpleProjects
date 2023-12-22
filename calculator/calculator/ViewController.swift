@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    let items: [String] = ["C", "+/-", "%", "÷", "7", "8", "9", "x", "4", "5", "6", "-", "1", "2", "3", "+", "0", ".", "="]
     let collectionView: UICollectionView = {
             let layout = UICollectionViewFlowLayout()
             let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -49,7 +50,7 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 9
+        return items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -65,10 +66,13 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemCount: CGFloat = 3
+        let itemCount: CGFloat = 4
+        let line: CGFloat = 5
         let interSpace: CGFloat = 10 * (itemCount - 1)
+        let lineSpace: CGFloat = 10 * (line - 1)
         let width = (collectionView.frame.width - interSpace) / itemCount
+        let height = (collectionView.frame.height - lineSpace) / line
         
-        return CGSize(width: width, height: width)
+        return CGSize(width: width, height: height)
     }
 }
