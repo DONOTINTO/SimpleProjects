@@ -9,20 +9,21 @@ import UIKit
 import SnapKit
 
 class numberCollectionViewCell: UICollectionViewCell {
-    let label = UILabel()
+    let labelButton = UIButton()
     
     func setImage(_ text: String) {
-        self.label.text = text
+        self.labelButton.setTitle(text, for: .normal)
     }
     
     func initSetup() {
-        self.contentView.addSubview(label)
-        label.textAlignment = .center
-        label.backgroundColor = .white
+        self.contentView.addSubview(labelButton)
+        labelButton.configuration?.titleAlignment = .center
+        labelButton.backgroundColor = .white
+        labelButton.setTitleColor(.black, for: .normal)
     }
     
     func setConstraints() {
-        label.snp.makeConstraints {
+        labelButton.snp.makeConstraints {
             $0.edges.equalTo(self.contentView.snp.edges)
         }
     }
