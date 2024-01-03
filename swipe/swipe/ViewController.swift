@@ -57,7 +57,6 @@ class ViewController: UIViewController {
             $0.bottom.equalTo(self.horizonScrollView.contentLayoutGuide.snp.bottom)
             
             $0.height.equalTo(self.horizonScrollView.frameLayoutGuide.snp.height)
-            $0.width.equalTo(1200)
         }
     }
     
