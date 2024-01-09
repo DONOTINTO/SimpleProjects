@@ -14,6 +14,8 @@
 		ACB8D6542B4B73D7005D9214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB8D6532B4B73D7005D9214 /* Assets.xcassets */; };
 		ACB8D6572B4B73D7005D9214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8D6552B4B73D7005D9214 /* LaunchScreen.storyboard */; };
 		ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */; };
+		ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */; };
+		ACB8D6632B4BB33E005D9214 /* MyUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		ACB8D6562B4B73D7005D9214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACB8D6582B4B73D7005D9214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
+		ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITableViewController.swift; sourceTree = "<group>"; };
+		ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +67,21 @@
 				ACB8D64E2B4B73D7005D9214 /* HomeViewController.swift */,
 				ACB8D6502B4B73D7005D9214 /* Main.storyboard */,
 				ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */,
+				ACB8D6642B4BB530005D9214 /* TableView */,
 				ACB8D6532B4B73D7005D9214 /* Assets.xcassets */,
 				ACB8D6552B4B73D7005D9214 /* LaunchScreen.storyboard */,
 				ACB8D6582B4B73D7005D9214 /* Info.plist */,
 			);
 			path = PieceOfCake;
+			sourceTree = "<group>";
+		};
+		ACB8D6642B4BB530005D9214 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */,
+				ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +158,8 @@
 				ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */,
 				ACB8D64F2B4B73D7005D9214 /* HomeViewController.swift in Sources */,
 				ACB8D64B2B4B73D7005D9214 /* AppDelegate.swift in Sources */,
+				ACB8D6632B4BB33E005D9214 /* MyUITableViewCell.swift in Sources */,
+				ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */,
 				ACB8D64D2B4B73D7005D9214 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
