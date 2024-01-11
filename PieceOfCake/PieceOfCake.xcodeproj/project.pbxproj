@@ -16,6 +16,9 @@
 		ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */; };
 		ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */; };
 		ACB8D6632B4BB33E005D9214 /* MyUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */; };
+		ACFE27022B4EE70A002EF629 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27012B4EE70A002EF629 /* DelegateViewController.swift */; };
+		ACFE27042B4EE71A002EF629 /* DelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27032B4EE71A002EF629 /* DelegateProtocol.swift */; };
+		ACFE27062B4EE758002EF629 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27052B4EE758002EF629 /* WorkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
 		ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITableViewController.swift; sourceTree = "<group>"; };
 		ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITableViewCell.swift; sourceTree = "<group>"; };
+		ACFE27012B4EE70A002EF629 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		ACFE27032B4EE71A002EF629 /* DelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProtocol.swift; sourceTree = "<group>"; };
+		ACFE27052B4EE758002EF629 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +71,10 @@
 				ACB8D64A2B4B73D7005D9214 /* AppDelegate.swift */,
 				ACB8D64C2B4B73D7005D9214 /* SceneDelegate.swift */,
 				ACB8D64E2B4B73D7005D9214 /* HomeViewController.swift */,
-				ACB8D6502B4B73D7005D9214 /* Main.storyboard */,
 				ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */,
+				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
 				ACB8D6642B4BB530005D9214 /* TableView */,
+				ACB8D6502B4B73D7005D9214 /* Main.storyboard */,
 				ACB8D6532B4B73D7005D9214 /* Assets.xcassets */,
 				ACB8D6552B4B73D7005D9214 /* LaunchScreen.storyboard */,
 				ACB8D6582B4B73D7005D9214 /* Info.plist */,
@@ -82,6 +89,16 @@
 				ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		ACFE27002B4EE6DF002EF629 /* DelegatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE27012B4EE70A002EF629 /* DelegateViewController.swift */,
+				ACFE27052B4EE758002EF629 /* WorkViewController.swift */,
+				ACFE27032B4EE71A002EF629 /* DelegateProtocol.swift */,
+			);
+			path = DelegatePattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +175,11 @@
 				ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */,
 				ACB8D64F2B4B73D7005D9214 /* HomeViewController.swift in Sources */,
 				ACB8D64B2B4B73D7005D9214 /* AppDelegate.swift in Sources */,
+				ACFE27022B4EE70A002EF629 /* DelegateViewController.swift in Sources */,
 				ACB8D6632B4BB33E005D9214 /* MyUITableViewCell.swift in Sources */,
 				ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */,
+				ACFE27062B4EE758002EF629 /* WorkViewController.swift in Sources */,
+				ACFE27042B4EE71A002EF629 /* DelegateProtocol.swift in Sources */,
 				ACB8D64D2B4B73D7005D9214 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

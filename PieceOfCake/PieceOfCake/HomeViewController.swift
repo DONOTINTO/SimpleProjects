@@ -13,8 +13,8 @@ class HomeViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var contentStackView: UIStackView!
     var contentListButtons = [UIButton]()
-    var contentList = ["UIButton", "UITableView"]
-    var vcList = [UIButtonViewController(), MyUITableViewController()]
+    var contentList = ["UIButton", "UITableView", "Delegate Pattern"]
+    var vcList = [UIButtonViewController(), MyUITableViewController(), WorkViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
