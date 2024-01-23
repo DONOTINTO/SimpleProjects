@@ -13,8 +13,11 @@ class HomeViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var contentStackView: UIStackView!
     var contentListButtons = [UIButton]()
-    var contentList = ["UIButton", "UITableView", "Delegate Pattern"]
-    var vcList = [UIButtonViewController(), MyUITableViewController(), WorkViewController()]
+    var contentList = ["UIButton", "UITableView", "UICollectionView" ,"Delegate Pattern"]
+    lazy var vcList = [UIButtonViewController(),
+                       MyUITableViewController(),
+                       CollectionViewController(),
+                       WorkViewController()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,16 @@ class HomeViewController: UIViewController {
         configureStackView()
     }
 
+    @objc func buttonClicked(_ sender: UIButton) {
+        let idx = sender.tag
+        
+        let nextVC = vcList[idx]
+        self.navigationController?.pushViewController(nextVC, animated: true)
+    }
+}
+
+// UI 관련
+extension HomeViewController {
     func designUI() {
         let imageConfiguration = UIImage.SymbolConfiguration(scale: .medium)
         var buttonConfiguration = UIButton.Configuration.plain()
@@ -69,12 +82,4 @@ class HomeViewController: UIViewController {
             contentStackView.addArrangedSubview($0)
         }
     }
-    
-    @objc func buttonClicked(_ sender: UIButton) {
-        let idx = sender.tag
-        
-        let nextVC = vcList[idx]
-        self.navigationController?.pushViewController(nextVC, animated: true)
-    }
 }
-
