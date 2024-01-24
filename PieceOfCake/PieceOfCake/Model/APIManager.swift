@@ -40,6 +40,9 @@ enum SortType: Int {
     }
 }
 
+//=====================================================
+// Naver Shopping API 호출 Manager - Singleton
+//=====================================================
 class APIManager {
     static let shared = APIManager()
     
@@ -72,6 +75,26 @@ class APIManager {
                 print(failure)
             }
         }
+    }
+    
+    func callRequestNaverShoppingByURLSession(keyword: String, start: Int, display: Int, sortType: SortType, completion: @escaping (NaverSearch) -> Void) {
+        
+        let query = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        
+        let urlSession = URLSession(configuration: .default)
+        
+        guard let url = URL(string: "https://openapi.naver.com/v1/search/shop.json?query=\(query)") else { return }
+        
+        urlSession.dataTask(with: url) { data, response, error in
+            if error != nil { return }
+            guard let data else { return }
+            
+            let decoder = JSONDecoder()
+            
+            
+        }
+        
+                
     }
 }
 

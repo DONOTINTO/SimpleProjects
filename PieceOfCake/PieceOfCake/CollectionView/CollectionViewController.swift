@@ -77,6 +77,10 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
         return item
     }
     
+    // Cell 선택 시
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
     
 }
 
