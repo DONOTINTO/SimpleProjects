@@ -79,22 +79,53 @@ class APIManager {
     
     func callRequestNaverShoppingByURLSession(keyword: String, start: Int, display: Int, sortType: SortType, completion: @escaping (NaverSearch) -> Void) {
         
+        // 한글 인코딩
         let query = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         
-        let urlSession = URLSession(configuration: .default)
+        // URL 설정
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "openapi.naver.com"
+        urlComponents.path = "/v1/search/shop.json"
         
-        guard let url = URL(string: "https://openapi.naver.com/v1/search/shop.json?query=\(query)") else { return }
+        // 쿼리 설정
+        let queryItem = URLQueryItem(name: "query", value: query)
+        let displayItem = URLQueryItem(name: "display", value: "\(display)")
+        let startItem = URLQueryItem(name: "start", value: "\(start)")
+        let sortItem = URLQueryItem(name: "sort", value: sortType.param)
         
-        urlSession.dataTask(with: url) { data, response, error in
-            if error != nil { return }
+        urlComponents.queryItems = [queryItem, displayItem, startItem, sortItem]
+        
+        // URL Request 생성
+        guard let url = urlComponents.url else { return }
+        var urlRequest = URLRequest(url: url)
+        
+        // HTTP Method(통신 방식) 설정 - GET / POST
+        urlRequest.httpMethod = "GET"
+        
+        // URL Header 세팅
+        urlRequest.setValue(APIKey.clientID, forHTTPHeaderField: "X-Naver-Client-Id")
+        urlRequest.setValue(APIKey.clientSecret, forHTTPHeaderField: "X-Naver-Client-Secret")
+        
+        
+        // URL Session 생성
+        let urlSession = URLSession.shared
+        
+        // 요청 수행
+        urlSession.dataTask(with: urlRequest) {data, response, error in
+            if let error { return }
             guard let data else { return }
+            guard let response = response as? HTTPURLResponse else { return }
             
-            let decoder = JSONDecoder()
+            // JSON 형태를 디코딩하여 NaverSearch(struct) 형태로 바꿈
+            do {
+                let userResponse = try JSONDecoder().decode(NaverSearch.self, from: data)
+                dump(userResponse)
+            } catch {
+                print(error.localizedDescription)
+            }
             
-            
-        }
-        
-                
+        }.resume()
     }
 }
 

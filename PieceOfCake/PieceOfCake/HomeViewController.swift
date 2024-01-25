@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
         
         designUI()
         configureStackView()
+        
+        APIManager.shared.callRequestNaverShoppingByURLSession(keyword: "swift", start: 1, display: 10, sortType: .similar) { _ in
+            
+        }
     }
 
     @objc func buttonClicked(_ sender: UIButton) {
