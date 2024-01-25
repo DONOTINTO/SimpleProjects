@@ -13,10 +13,11 @@ class HomeViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var contentStackView: UIStackView!
     var contentListButtons = [UIButton]()
-    var contentList = ["UIButton", "UITableView", "UICollectionView" ,"Delegate Pattern"]
+    var contentList = ["UIButton", "UITableView", "UICollectionView", "MapKit & CL" ,"Delegate Pattern"]
     lazy var vcList = [UIButtonViewController(),
                        MyUITableViewController(),
                        CollectionViewController(),
+                       CLMapKitViewController(),
                        WorkViewController()]
     
     override func viewDidLoad() {
@@ -24,10 +25,6 @@ class HomeViewController: UIViewController {
         
         designUI()
         configureStackView()
-        
-        APIManager.shared.callRequestNaverShoppingByURLSession(keyword: "swift", start: 1, display: 10, sortType: .similar) { _ in
-            
-        }
     }
 
     @objc func buttonClicked(_ sender: UIButton) {
