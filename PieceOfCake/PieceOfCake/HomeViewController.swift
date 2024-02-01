@@ -13,10 +13,11 @@ class HomeViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var contentStackView: UIStackView!
     var contentListButtons = [UIButton]()
-    var contentList = ["UIButton", "UITableView", "UICollectionView", "NavigationView", "MapKit & CL", "Delegate Pattern"]
+    var contentList = ["UIButton", "UITableView", "UICollectionView", "UIScrollView", "NavigationView", "MapKit & CL", "Delegate Pattern"]
     lazy var vcList = [UIButtonViewController(),
                        MyUITableViewController(),
                        CollectionViewController(),
+                       ScrollViewController(),
                        NavigationViewController(),
                        CLMapKitViewController(),
                        WorkViewController()]
