@@ -20,6 +20,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
+        if #available(iOS 15, *) {
+            // MARK: Navigation bar appearance
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithOpaqueBackground()
+            navigationBarAppearance.titleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.black
+            ]
+            navigationBarAppearance.backgroundColor = UIColor.clear
+            // 일반 네이게이션 바 appearance settings
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            // 랜드스케이프 되었을 때 네이게이션 바 appearance settings
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            // 스크롤 엣지가 닿았을 때 네이게이션 바 appearance settings
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+            
+            // MARK: Tab bar appearance
+            let tabBarAppearance = UITabBarAppearance()
+            tabBarAppearance.configureWithOpaqueBackground()
+            tabBarAppearance.backgroundColor = UIColor.black
+            // 스크롤 엣지가 닿았을 때 탭바 appearance settings
+            UITabBar.appearance().scrollEdgeAppearance = tabBarAppearance
+            // 일반 탭바 appearance settings
+            UITabBar.appearance().standardAppearance = tabBarAppearance
+        }
+        
         // MARK: 스토리보드 없이 초기 화면 띄우기
         
         // 케이스 별로 VC 띄우기
