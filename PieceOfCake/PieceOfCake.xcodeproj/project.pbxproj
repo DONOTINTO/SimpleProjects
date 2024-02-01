@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0538422B6385CA006168FD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0538412B6385CA006168FD /* NavigationViewController.swift */; };
 		AC9AC6002B624CDE005A335A /* CLMapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */; };
 		AC9AC6042B62527C005A335A /* UIViewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC6032B62527C005A335A /* UIViewController++.swift */; };
 		AC9AC6062B62591C005A335A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC6052B62591C005A335A /* UserDefaultManager.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC0538412B6385CA006168FD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitViewController.swift; sourceTree = "<group>"; };
 		AC9AC6032B62527C005A335A /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
 		AC9AC6052B62591C005A335A /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC0538402B6385AC006168FD /* NavigationVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC0538412B6385CA006168FD /* NavigationViewController.swift */,
+			);
+			path = NavigationVC;
+			sourceTree = "<group>";
+		};
 		AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 				ACB8D64A2B4B73D7005D9214 /* AppDelegate.swift */,
 				ACB8D64C2B4B73D7005D9214 /* SceneDelegate.swift */,
 				ACB8D64E2B4B73D7005D9214 /* HomeViewController.swift */,
+				AC0538402B6385AC006168FD /* NavigationVC */,
 				AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */,
 				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
 				ACB4C50D2B50F9A700961FC8 /* ButtonView */,
@@ -268,6 +279,7 @@
 				ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */,
 				ACFE27062B4EE758002EF629 /* WorkViewController.swift in Sources */,
 				ACFE27042B4EE71A002EF629 /* DelegateProtocol.swift in Sources */,
+				AC0538422B6385CA006168FD /* NavigationViewController.swift in Sources */,
 				ACB8D64D2B4B73D7005D9214 /* SceneDelegate.swift in Sources */,
 				ACCDD4772B5E6A2900034673 /* APIManager.swift in Sources */,
 				ACCDD4752B5E659900034673 /* APIKey.swift in Sources */,
