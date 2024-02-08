@@ -104,6 +104,15 @@
 			path = CompositionLayout;
 			sourceTree = "<group>";
 		};
+		AC19A6E02B74A63F00A0C752 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ACCDD4742B5E659900034673 /* APIKey.swift */,
+				ACCDD4762B5E6A2900034673 /* APIManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		AC913EAD2B6BAC2300B75565 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +183,7 @@
 		ACB8D6492B4B73D7005D9214 /* PieceOfCake */ = {
 			isa = PBXGroup;
 			children = (
+				AC19A6E02B74A63F00A0C752 /* API */,
 				AC9AC6022B62526B005A335A /* Extension */,
 				ACCDD4782B5E6A2F00034673 /* Model */,
 				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
@@ -208,8 +218,6 @@
 		ACCDD4782B5E6A2F00034673 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ACCDD4742B5E659900034673 /* APIKey.swift */,
-				ACCDD4762B5E6A2900034673 /* APIManager.swift */,
 				AC9AC6052B62591C005A335A /* UserDefaultManager.swift */,
 			);
 			path = Model;

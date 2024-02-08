@@ -127,6 +127,63 @@ class APIManager {
             
         }.resume()
     }
+    
+    //=====================================================
+    // Naver Shopping API 호출 - Meta Type 버전
+    //=====================================================
+    func anyTypeFetch<T: Decodable>(type: T.Type, input: String ,completionHandler: @escaping (T?, Error?) -> Void) {
+        // 한글 인코딩
+        let query = input.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        
+        // URL 설정
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "openapi.naver.com"
+        urlComponents.path = "/v1/search/shop.json"
+        
+        // 쿼리 설정
+        let queryItem = URLQueryItem(name: "query", value: query)
+        let displayItem = URLQueryItem(name: "display", value: "30")
+        let startItem = URLQueryItem(name: "start", value: "0")
+        
+        urlComponents.queryItems = [queryItem, displayItem, startItem]
+        
+        // URL Request 생성
+        guard let url = urlComponents.url else { return }
+        var urlRequest = URLRequest(url: url)
+        
+        // HTTP Method(통신 방식) 설정 - GET / POST
+        urlRequest.httpMethod = "GET"
+        
+        // URL Header 세팅
+        urlRequest.setValue(APIKey.clientID, forHTTPHeaderField: "X-Naver-Client-Id")
+        urlRequest.setValue(APIKey.clientSecret, forHTTPHeaderField: "X-Naver-Client-Secret")
+        
+        
+        // URL Session 생성
+        let urlSession = URLSession.shared
+        
+        // 요청 수행
+        urlSession.dataTask(with: urlRequest) {data, response, error in
+            if let error {
+                completionHandler(nil, error)
+                return
+            }
+            guard let data else { return }
+            guard let response = response as? HTTPURLResponse else { return }
+            
+            // JSON 형태를 디코딩하여 NaverSearch(struct) 형태로 바꿈
+            do {
+                let userResponse = try JSONDecoder().decode(type.self, from: data)
+                completionHandler(userResponse, nil)
+            } catch {
+                completionHandler(nil, error)
+                print(error.localizedDescription)
+            }
+            
+        }.resume()
+    }
+    
 }
 
 //=====================================================
