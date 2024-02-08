@@ -13,10 +13,11 @@ class HomeViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var contentStackView: UIStackView!
     var contentListButtons = [UIButton]()
-    var contentList = ["UIButton", "UITableView", "UICollectionView", "UIScrollView", "NavigationView", "MapKit & CL", "Delegate Pattern"]
+    var contentList = ["UIButton", "UITableView", "UICollectionView", "UICollectionView CompositionLayout", "UIScrollView", "NavigationView", "MapKit & CL", "Delegate Pattern"]
     lazy var vcList = [UIButtonViewController(),
                        MyUITableViewController(),
                        CollectionViewController(),
+                       CompositionCollectionViewController(),
                        ScrollViewController(),
                        NavigationViewController(),
                        CLMapKitViewController(),
@@ -68,6 +69,7 @@ extension HomeViewController {
             var button: UIButton {
                 let button = UIButton()
                 button.setTitle(contentList[idx], for: .normal)
+                button.titleLabel?.adjustsFontSizeToFitWidth = true
                 button.backgroundColor = .systemCyan
                 button.layer.cornerRadius = 10
                 button.setTitleColor(.white, for: .normal)
