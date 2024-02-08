@@ -13,6 +13,7 @@
 		AC19A6DB2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DA2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift */; };
 		AC19A6DD2B748F6600A0C752 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DC2B748F6600A0C752 /* UIView++.swift */; };
 		AC19A6DF2B7496F500A0C752 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DE2B7496F500A0C752 /* HeaderCollectionReusableView.swift */; };
+		AC19A6E82B74E24900A0C752 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6E72B74E24900A0C752 /* ErrorType.swift */; };
 		AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */; };
 		AC913EB22B6BADCB00B75565 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AC913EB12B6BADCB00B75565 /* SnapKit */; };
 		AC9AC6002B624CDE005A335A /* CLMapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */; };
@@ -46,6 +47,7 @@
 		AC19A6DA2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC19A6DC2B748F6600A0C752 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
 		AC19A6DE2B7496F500A0C752 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		AC19A6E72B74E24900A0C752 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitViewController.swift; sourceTree = "<group>"; };
 		AC9AC6032B62527C005A335A /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				ACCDD4742B5E659900034673 /* APIKey.swift */,
 				ACCDD4762B5E6A2900034673 /* APIManager.swift */,
+				AC19A6E72B74E24900A0C752 /* ErrorType.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */,
+				AC19A6E82B74E24900A0C752 /* ErrorType.swift in Sources */,
 				ACB8D64F2B4B73D7005D9214 /* HomeViewController.swift in Sources */,
 				AC9AC6062B62591C005A335A /* UserDefaultManager.swift in Sources */,
 				AC19A6DD2B748F6600A0C752 /* UIView++.swift in Sources */,
