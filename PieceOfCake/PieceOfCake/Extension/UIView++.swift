@@ -11,4 +11,10 @@ extension UIView {
     static var identifier: String {
         return String(describing: self)
     }
+    
+    @objc func configureHierarchy() { }
+    
+    @objc func configureLayout() { }
+    
+    @objc func configureView() { }
 }

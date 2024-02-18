@@ -15,6 +15,10 @@
 		AC19A6DF2B7496F500A0C752 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DE2B7496F500A0C752 /* HeaderCollectionReusableView.swift */; };
 		AC19A6E82B74E24900A0C752 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6E72B74E24900A0C752 /* ErrorType.swift */; };
 		AC24F2B52B8212B500DD1E19 /* UserInfoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2B42B8212B500DD1E19 /* UserInfoTable.swift */; };
+		AC24F2BB2B8217FE00DD1E19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BA2B8217FE00DD1E19 /* BaseViewController.swift */; };
+		AC24F2BD2B8218B100DD1E19 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BC2B8218B100DD1E19 /* BaseView.swift */; };
+		AC24F2BF2B82197500DD1E19 /* ApplyBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */; };
+		AC24F2C12B82198C00DD1E19 /* ApplyBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */; };
 		AC3D55002B7DD60B00BB10D8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */; };
 		AC3D55032B7DD62A00BB10D8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55022B7DD62A00BB10D8 /* Realm */; };
 		AC3D55052B7DD62A00BB10D8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55042B7DD62A00BB10D8 /* RealmSwift */; };
@@ -53,6 +57,10 @@
 		AC19A6DE2B7496F500A0C752 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		AC19A6E72B74E24900A0C752 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		AC24F2B42B8212B500DD1E19 /* UserInfoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTable.swift; sourceTree = "<group>"; };
+		AC24F2BA2B8217FE00DD1E19 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AC24F2BC2B8218B100DD1E19 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseVC.swift; sourceTree = "<group>"; };
+		AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseView.swift; sourceTree = "<group>"; };
 		AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +149,17 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
+		AC24F2B82B82179D00DD1E19 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC24F2BA2B8217FE00DD1E19 /* BaseViewController.swift */,
+				AC24F2BC2B8218B100DD1E19 /* BaseView.swift */,
+				AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */,
+				AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
 		AC913EAD2B6BAC2300B75565 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +233,7 @@
 				AC19A6E02B74A63F00A0C752 /* API */,
 				AC9AC6022B62526B005A335A /* Extension */,
 				ACCDD4782B5E6A2F00034673 /* Model */,
+				AC24F2B82B82179D00DD1E19 /* BaseVC */,
 				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
 				AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */,
 				AC0538402B6385AC006168FD /* NavigationVC */,
@@ -345,13 +365,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC24F2BD2B8218B100DD1E19 /* BaseView.swift in Sources */,
 				ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */,
 				AC19A6E82B74E24900A0C752 /* ErrorType.swift in Sources */,
 				ACB8D64F2B4B73D7005D9214 /* HomeViewController.swift in Sources */,
 				AC9AC6062B62591C005A335A /* UserDefaultManager.swift in Sources */,
 				AC19A6DD2B748F6600A0C752 /* UIView++.swift in Sources */,
+				AC24F2BB2B8217FE00DD1E19 /* BaseViewController.swift in Sources */,
 				AC9AC6002B624CDE005A335A /* CLMapKitViewController.swift in Sources */,
 				AC19A6DB2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift in Sources */,
+				AC24F2C12B82198C00DD1E19 /* ApplyBaseView.swift in Sources */,
 				ACB8D64B2B4B73D7005D9214 /* AppDelegate.swift in Sources */,
 				ACFE27022B4EE70A002EF629 /* DelegateViewController.swift in Sources */,
 				ACB4C5112B50F9FF00961FC8 /* CollectionViewController.swift in Sources */,
@@ -361,6 +384,7 @@
 				AC3D55002B7DD60B00BB10D8 /* RealmManager.swift in Sources */,
 				ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */,
 				AC24F2B52B8212B500DD1E19 /* UserInfoTable.swift in Sources */,
+				AC24F2BF2B82197500DD1E19 /* ApplyBaseVC.swift in Sources */,
 				ACFE27062B4EE758002EF629 /* WorkViewController.swift in Sources */,
 				ACFE27042B4EE71A002EF629 /* DelegateProtocol.swift in Sources */,
 				AC0538422B6385CA006168FD /* NavigationViewController.swift in Sources */,
