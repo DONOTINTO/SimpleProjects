@@ -166,12 +166,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		AC9AC6072B625ACB005A335A /* SceneDelegateTestVC */ = {
+		AC9AC6072B625ACB005A335A /* SceneDelegateVC */ = {
 			isa = PBXGroup;
 			children = (
 				AC9AC6082B625AF1005A335A /* SceneDelegateViewController.swift */,
 			);
-			path = SceneDelegateTestVC;
+			path = SceneDelegateVC;
 			sourceTree = "<group>";
 		};
 		ACB4C50C2B50F99900961FC8 /* CollectionView */ = {
@@ -225,11 +225,11 @@
 				ACB8D64E2B4B73D7005D9214 /* HomeViewController.swift */,
 				ACB8D64A2B4B73D7005D9214 /* AppDelegate.swift */,
 				ACB8D64C2B4B73D7005D9214 /* SceneDelegate.swift */,
+				AC9AC6072B625ACB005A335A /* SceneDelegateVC */,
 				ACB8D6502B4B73D7005D9214 /* Main.storyboard */,
 				ACB8D6532B4B73D7005D9214 /* Assets.xcassets */,
 				ACB8D6552B4B73D7005D9214 /* LaunchScreen.storyboard */,
 				ACB8D6582B4B73D7005D9214 /* Info.plist */,
-				AC9AC6072B625ACB005A335A /* SceneDelegateTestVC */,
 			);
 			path = PieceOfCake;
 			sourceTree = "<group>";

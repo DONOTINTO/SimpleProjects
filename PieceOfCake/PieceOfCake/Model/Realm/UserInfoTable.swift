@@ -8,7 +8,7 @@
 import UIKit
 import RealmSwift
 
-class UserInfoTable {
+class UserInfoTable: Object {
     @Persisted(primaryKey: true) var UID: ObjectId
     @Persisted var id: String
     @Persisted var password: String
