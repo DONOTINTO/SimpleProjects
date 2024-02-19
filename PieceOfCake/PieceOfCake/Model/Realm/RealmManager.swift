@@ -36,13 +36,20 @@ class RealmManager {
         return realm.object(ofType: type, forPrimaryKey: id)
     }
     
-    // func fetchByWhere<T: Object>(type: T.Type, value: Any) -> Results<T> {
-    //     let list = realm.objects(type).where {
-    //         $0.value == value
-    //     }
-    //     
-    //     return list
-    // }
+    // Read - Filter를 사용해도 Result<T>로 반환 가능
+    func fetchByPredicate<T: Object>(type: T.Type, date: Date) -> Results<T> {
+        
+        // 오늘 날짜 Date만 선별
+        let startDate = Calendar.current.startOfDay(for: Date())
+        let endOfDate = Calendar.current.date(byAdding: .day, value: 1, to: startDate) ?? Date()
+        
+        // column명 사용해야함 / %@
+        let predicate = NSPredicate(format: "칼럼명 >= %@ && 칼럼명 < %@", startDate as NSDate, endOfDate as NSDate)
+        
+        let list = realm.objects(type.self).filter(predicate)
+        
+        return list
+    }
     
     // Delete
     func delete<T: Object>(_ item: T) {
