@@ -19,6 +19,7 @@
 		AC24F2BD2B8218B100DD1E19 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BC2B8218B100DD1E19 /* BaseView.swift */; };
 		AC24F2BF2B82197500DD1E19 /* ApplyBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */; };
 		AC24F2C12B82198C00DD1E19 /* ApplyBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */; };
+		AC24F2C82B837A4F00DD1E19 /* FileManager++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2C72B837A4F00DD1E19 /* FileManager++.swift */; };
 		AC3D55002B7DD60B00BB10D8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */; };
 		AC3D55032B7DD62A00BB10D8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55022B7DD62A00BB10D8 /* Realm */; };
 		AC3D55052B7DD62A00BB10D8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55042B7DD62A00BB10D8 /* RealmSwift */; };
@@ -61,6 +62,7 @@
 		AC24F2BC2B8218B100DD1E19 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseVC.swift; sourceTree = "<group>"; };
 		AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseView.swift; sourceTree = "<group>"; };
+		AC24F2C72B837A4F00DD1E19 /* FileManager++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager++.swift"; sourceTree = "<group>"; };
 		AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,14 @@
 				AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */,
 			);
 			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		AC24F2C62B837A1200DD1E19 /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				AC24F2C72B837A4F00DD1E19 /* FileManager++.swift */,
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 		AC913EAD2B6BAC2300B75565 /* ScrollView */ = {
@@ -266,6 +276,7 @@
 		ACCDD4782B5E6A2F00034673 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC24F2C62B837A1200DD1E19 /* FileManager */,
 				AC24F2B72B82144400DD1E19 /* Realm */,
 				AC24F2B62B82143C00DD1E19 /* UserDefaults */,
 			);
@@ -396,6 +407,7 @@
 				ACB4C5132B50FA2400961FC8 /* CollectionViewCell.swift in Sources */,
 				AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */,
 				AC9AC6042B62527C005A335A /* UIViewController++.swift in Sources */,
+				AC24F2C82B837A4F00DD1E19 /* FileManager++.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
