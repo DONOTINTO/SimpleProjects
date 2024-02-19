@@ -20,6 +20,7 @@
 		AC24F2BF2B82197500DD1E19 /* ApplyBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */; };
 		AC24F2C12B82198C00DD1E19 /* ApplyBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */; };
 		AC24F2C82B837A4F00DD1E19 /* FileManager++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2C72B837A4F00DD1E19 /* FileManager++.swift */; };
+		AC24F2CB2B837EAB00DD1E19 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2CA2B837EAB00DD1E19 /* ImagePickerViewController.swift */; };
 		AC3D55002B7DD60B00BB10D8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */; };
 		AC3D55032B7DD62A00BB10D8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55022B7DD62A00BB10D8 /* Realm */; };
 		AC3D55052B7DD62A00BB10D8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55042B7DD62A00BB10D8 /* RealmSwift */; };
@@ -63,6 +64,7 @@
 		AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseVC.swift; sourceTree = "<group>"; };
 		AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseView.swift; sourceTree = "<group>"; };
 		AC24F2C72B837A4F00DD1E19 /* FileManager++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager++.swift"; sourceTree = "<group>"; };
+		AC24F2CA2B837EAB00DD1E19 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,14 @@
 			path = FileManager;
 			sourceTree = "<group>";
 		};
+		AC24F2C92B837E6700DD1E19 /* ImagePickerVC */ = {
+			isa = PBXGroup;
+			children = (
+				AC24F2CA2B837EAB00DD1E19 /* ImagePickerViewController.swift */,
+			);
+			path = ImagePickerVC;
+			sourceTree = "<group>";
+		};
 		AC913EAD2B6BAC2300B75565 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,6 +255,7 @@
 				ACCDD4782B5E6A2F00034673 /* Model */,
 				AC24F2B82B82179D00DD1E19 /* BaseVC */,
 				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
+				AC24F2C92B837E6700DD1E19 /* ImagePickerVC */,
 				AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */,
 				AC0538402B6385AC006168FD /* NavigationVC */,
 				AC913EAD2B6BAC2300B75565 /* ScrollView */,
@@ -403,6 +414,7 @@
 				AC19A6D92B738CD700A0C752 /* CompositionalLayout.swift in Sources */,
 				ACB8D64D2B4B73D7005D9214 /* SceneDelegate.swift in Sources */,
 				ACCDD4772B5E6A2900034673 /* APIManager.swift in Sources */,
+				AC24F2CB2B837EAB00DD1E19 /* ImagePickerViewController.swift in Sources */,
 				ACCDD4752B5E659900034673 /* APIKey.swift in Sources */,
 				ACB4C5132B50FA2400961FC8 /* CollectionViewCell.swift in Sources */,
 				AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */,

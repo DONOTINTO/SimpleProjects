@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     @IBOutlet var searchButton: UIButton!
     @IBOutlet var contentStackView: UIStackView!
     var contentListButtons = [UIButton]()
-    var contentList = ["UIButton", "UITableView", "UICollectionView", "UICollectionView CompositionLayout", "UIScrollView", "NavigationView", "MapKit & CL", "Delegate Pattern"]
+    var contentList = ["UIButton", "UITableView", "UICollectionView", "UICollectionView CompositionLayout", "UIScrollView", "NavigationView", "MapKit & CL", "ImagePickerVC", "Delegate Pattern"]
     lazy var vcList = [UIButtonViewController(),
                        MyUITableViewController(),
                        CollectionViewController(),
@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
                        ScrollViewController(),
                        NavigationViewController(),
                        CLMapKitViewController(),
+                       ImagePickerViewController(),
                        WorkViewController()]
     
     override func viewDidLoad() {
