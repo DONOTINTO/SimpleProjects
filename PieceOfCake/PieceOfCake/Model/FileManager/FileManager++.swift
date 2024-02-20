@@ -56,4 +56,24 @@ extension UIViewController {
             return nil
         }
     }
+    
+    func removeImageFromDocument(filename: String) {
+        
+        guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return }
+        
+        let fileURL: URL
+        if #available(iOS 16.0, *) {
+            fileURL = documentDirectory.appending(path: "\(filename).jpg")
+        } else {
+            fileURL = documentDirectory.appendingPathComponent("\(filename).jpg")
+        }
+        
+        if FileManager.default.fileExists(atPath: fileURL.path()) {
+            do {
+                try FileManager.default.removeItem(atPath: fileURL.path())
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
 }
