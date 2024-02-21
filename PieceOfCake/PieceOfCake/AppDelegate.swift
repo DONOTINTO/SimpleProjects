@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 // 프로퍼티 명 변경
                 // from : 변경 전
                 // to : 변경 후
-                migration.renameProperty(onType: Person.className(), from: <#T##String#>, to: <#T##String#>)
+                // migration.renameProperty(onType: Person.className(), from: <#T##String#>, to: <#T##String#>)
             }
             
             

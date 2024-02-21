@@ -26,6 +26,8 @@
 		AC3D55052B7DD62A00BB10D8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55042B7DD62A00BB10D8 /* RealmSwift */; };
 		AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */; };
 		AC913EB22B6BADCB00B75565 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AC913EB12B6BADCB00B75565 /* SnapKit */; };
+		AC99D5F92B8622400099CA04 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99D5F82B8622400099CA04 /* RealmViewController.swift */; };
+		AC99D5FB2B8628530099CA04 /* RealmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99D5FA2B8628530099CA04 /* RealmDetailViewController.swift */; };
 		AC9AC6002B624CDE005A335A /* CLMapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */; };
 		AC9AC6042B62527C005A335A /* UIViewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC6032B62527C005A335A /* UIViewController++.swift */; };
 		AC9AC6062B62591C005A335A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC6052B62591C005A335A /* UserDefaultManager.swift */; };
@@ -67,6 +69,8 @@
 		AC24F2CA2B837EAB00DD1E19 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		AC99D5F82B8622400099CA04 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		AC99D5FA2B8628530099CA04 /* RealmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDetailViewController.swift; sourceTree = "<group>"; };
 		AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitViewController.swift; sourceTree = "<group>"; };
 		AC9AC6032B62527C005A335A /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
 		AC9AC6052B62591C005A335A /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			children = (
 				AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */,
 				AC24F2B42B8212B500DD1E19 /* UserInfoTable.swift */,
+				AC99D5F82B8622400099CA04 /* RealmViewController.swift */,
+				AC99D5FA2B8628530099CA04 /* RealmDetailViewController.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -278,8 +284,8 @@
 				AC9AC6022B62526B005A335A /* Extension */,
 				AC24F2C62B837A1200DD1E19 /* FileManager */,
 				AC24F2B62B82143C00DD1E19 /* UserDefaults */,
-				AC24F2B72B82144400DD1E19 /* Realm */,
 				AC24F2B82B82179D00DD1E19 /* BaseVC */,
+				AC24F2B72B82144400DD1E19 /* Realm */,
 				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
 				AC24F2C92B837E6700DD1E19 /* ImagePickerVC */,
 				AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */,
@@ -431,8 +437,10 @@
 				ACB8D64D2B4B73D7005D9214 /* SceneDelegate.swift in Sources */,
 				ACCDD4772B5E6A2900034673 /* APIManager.swift in Sources */,
 				AC24F2CB2B837EAB00DD1E19 /* ImagePickerViewController.swift in Sources */,
+				AC99D5FB2B8628530099CA04 /* RealmDetailViewController.swift in Sources */,
 				ACCDD4752B5E659900034673 /* APIKey.swift in Sources */,
 				ACB4C5132B50FA2400961FC8 /* CollectionViewCell.swift in Sources */,
+				AC99D5F92B8622400099CA04 /* RealmViewController.swift in Sources */,
 				AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */,
 				AC9AC6042B62527C005A335A /* UIViewController++.swift in Sources */,
 				AC24F2C82B837A4F00DD1E19 /* FileManager++.swift in Sources */,

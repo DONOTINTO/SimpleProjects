@@ -25,7 +25,7 @@ class RealmManager {
     }
     
     // Create
-    func write<T: Object>(_ item: T) {
+    func add<T: Object>(_ item: T) {
         do {
             try realm.write {
                 realm.add(item)
