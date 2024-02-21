@@ -180,6 +180,29 @@
 			path = ImagePickerVC;
 			sourceTree = "<group>";
 		};
+		AC24F2CC2B8442CC00DD1E19 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		AC24F2CD2B8462B400DD1E19 /* NotFinished */ = {
+			isa = PBXGroup;
+			children = (
+				AC24F2CE2B8462BF00DD1E19 /* PHPickerVC */,
+				AC24F2CC2B8442CC00DD1E19 /* NotificationCenter */,
+			);
+			path = NotFinished;
+			sourceTree = "<group>";
+		};
+		AC24F2CE2B8462BF00DD1E19 /* PHPickerVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PHPickerVC;
+			sourceTree = "<group>";
+		};
 		AC913EAD2B6BAC2300B75565 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -250,9 +273,12 @@
 		ACB8D6492B4B73D7005D9214 /* PieceOfCake */ = {
 			isa = PBXGroup;
 			children = (
+				AC24F2CD2B8462B400DD1E19 /* NotFinished */,
 				AC19A6E02B74A63F00A0C752 /* API */,
 				AC9AC6022B62526B005A335A /* Extension */,
-				ACCDD4782B5E6A2F00034673 /* Model */,
+				AC24F2C62B837A1200DD1E19 /* FileManager */,
+				AC24F2B62B82143C00DD1E19 /* UserDefaults */,
+				AC24F2B72B82144400DD1E19 /* Realm */,
 				AC24F2B82B82179D00DD1E19 /* BaseVC */,
 				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
 				AC24F2C92B837E6700DD1E19 /* ImagePickerVC */,
@@ -282,16 +308,6 @@
 				ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */,
 			);
 			path = TableView;
-			sourceTree = "<group>";
-		};
-		ACCDD4782B5E6A2F00034673 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				AC24F2C62B837A1200DD1E19 /* FileManager */,
-				AC24F2B72B82144400DD1E19 /* Realm */,
-				AC24F2B62B82143C00DD1E19 /* UserDefaults */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		ACFE27002B4EE6DF002EF629 /* DelegatePattern */ = {
