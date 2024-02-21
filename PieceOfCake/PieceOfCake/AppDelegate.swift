@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,7 +14,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // schemaVersion (속성이 변경될 때 마다 카운트 증가시켜주어야함)
+        let configuration = Realm.Configuration(schemaVersion: 3) {
+            migration, oldSchemaVersion in
+            
+            // 옵셔널 프로퍼티 추가 및 프로퍼티 삭제의 경우
+            // 별다른 코드를 입력하지 않아도 됨
+            if oldSchemaVersion < 1 { }
+            
+            if oldSchemaVersion < 2 {
+                // 프로퍼티 명 변경
+                // from : 변경 전
+                // to : 변경 후
+                migration.renameProperty(onType: Person.className(), from: <#T##String#>, to: <#T##String#>)
+            }
+            
+            
+            if oldSchemaVersion < 3 {
+                // 프로퍼티 추가
+                migration.enumerateObjects(ofType: Person.className()) { oldObject, newObject in
+                    
+                    guard let newObject else { return }
+                    
+                    newObject["count"] = 100
+                }
+
+            }
+        }
+        
+        // Realm.Configuration.defaultConfiguration = configuration
+        
         return true
     }
 

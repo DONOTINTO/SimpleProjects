@@ -15,6 +15,15 @@ class RealmManager {
         return realm
     }
     
+    func checkRealmVersion() {
+        do {
+            let version = try schemaVersionAtURL(realm.configuration.fileURL!)
+            print(version)
+        } catch {
+            print(error)
+        }
+    }
+    
     // Create
     func write<T: Object>(_ item: T) {
         do {
