@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AC0538422B6385CA006168FD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0538412B6385CA006168FD /* NavigationViewController.swift */; };
+		AC17797C2B96FE590009EA87 /* GooglePlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17797B2B96FE590009EA87 /* GooglePlaceViewController.swift */; };
+		AC17797F2B9700A30009EA87 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17797E2B9700A30009EA87 /* SearchResultsViewController.swift */; };
+		AC1779822B9707A10009EA87 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = AC1779812B9707A10009EA87 /* GooglePlaces */; };
+		AC1779842B97086E0009EA87 /* GooglePlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1779832B97086E0009EA87 /* GooglePlaceManager.swift */; };
 		AC19A6D72B738C6400A0C752 /* CompositionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6D62B738C6400A0C752 /* CompositionCollectionViewController.swift */; };
 		AC19A6D92B738CD700A0C752 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6D82B738CD700A0C752 /* CompositionalLayout.swift */; };
 		AC19A6DB2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DA2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift */; };
@@ -54,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		AC0538412B6385CA006168FD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		AC17797B2B96FE590009EA87 /* GooglePlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceViewController.swift; sourceTree = "<group>"; };
+		AC17797E2B9700A30009EA87 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		AC1779832B97086E0009EA87 /* GooglePlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceManager.swift; sourceTree = "<group>"; };
 		AC19A6D62B738C6400A0C752 /* CompositionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionCollectionViewController.swift; sourceTree = "<group>"; };
 		AC19A6D82B738CD700A0C752 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
 		AC19A6DA2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -104,6 +111,7 @@
 				AC3D55052B7DD62A00BB10D8 /* RealmSwift in Frameworks */,
 				AC3D55032B7DD62A00BB10D8 /* Realm in Frameworks */,
 				ACCDD47B2B5E6A5600034673 /* Alamofire in Frameworks */,
+				AC1779822B9707A10009EA87 /* GooglePlaces in Frameworks */,
 				AC913EB22B6BADCB00B75565 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +125,16 @@
 				AC0538412B6385CA006168FD /* NavigationViewController.swift */,
 			);
 			path = NavigationVC;
+			sourceTree = "<group>";
+		};
+		AC17797D2B96FE5E0009EA87 /* GooglePlace */ = {
+			isa = PBXGroup;
+			children = (
+				AC17797B2B96FE590009EA87 /* GooglePlaceViewController.swift */,
+				AC17797E2B9700A30009EA87 /* SearchResultsViewController.swift */,
+				AC1779832B97086E0009EA87 /* GooglePlaceManager.swift */,
+			);
+			path = GooglePlace;
 			sourceTree = "<group>";
 		};
 		AC19A6D32B738BFE00A0C752 /* CompositionLayout */ = {
@@ -287,6 +305,7 @@
 				AC24F2B82B82179D00DD1E19 /* BaseVC */,
 				AC24F2B72B82144400DD1E19 /* Realm */,
 				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
+				AC17797D2B96FE5E0009EA87 /* GooglePlace */,
 				AC24F2C92B837E6700DD1E19 /* ImagePickerVC */,
 				AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */,
 				AC0538402B6385AC006168FD /* NavigationVC */,
@@ -347,6 +366,7 @@
 				AC913EB12B6BADCB00B75565 /* SnapKit */,
 				AC3D55022B7DD62A00BB10D8 /* Realm */,
 				AC3D55042B7DD62A00BB10D8 /* RealmSwift */,
+				AC1779812B9707A10009EA87 /* GooglePlaces */,
 			);
 			productName = PieceOfCake;
 			productReference = ACB8D6472B4B73D7005D9214 /* PieceOfCake.app */;
@@ -380,6 +400,7 @@
 				ACCDD4792B5E6A5600034673 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				AC913EB02B6BADCB00B75565 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				AC3D55012B7DD62A00BB10D8 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				AC1779802B9707A10009EA87 /* XCRemoteSwiftPackageReference "ios-places-sdk" */,
 			);
 			productRefGroup = ACB8D6482B4B73D7005D9214 /* Products */;
 			projectDirPath = "";
@@ -438,11 +459,14 @@
 				ACCDD4772B5E6A2900034673 /* APIManager.swift in Sources */,
 				AC24F2CB2B837EAB00DD1E19 /* ImagePickerViewController.swift in Sources */,
 				AC99D5FB2B8628530099CA04 /* RealmDetailViewController.swift in Sources */,
+				AC17797F2B9700A30009EA87 /* SearchResultsViewController.swift in Sources */,
 				ACCDD4752B5E659900034673 /* APIKey.swift in Sources */,
 				ACB4C5132B50FA2400961FC8 /* CollectionViewCell.swift in Sources */,
+				AC17797C2B96FE590009EA87 /* GooglePlaceViewController.swift in Sources */,
 				AC99D5F92B8622400099CA04 /* RealmViewController.swift in Sources */,
 				AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */,
 				AC9AC6042B62527C005A335A /* UIViewController++.swift in Sources */,
+				AC1779842B97086E0009EA87 /* GooglePlaceManager.swift in Sources */,
 				AC24F2C82B837A4F00DD1E19 /* FileManager++.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +700,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AC1779802B9707A10009EA87 /* XCRemoteSwiftPackageReference "ios-places-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.0;
+			};
+		};
 		AC3D55012B7DD62A00BB10D8 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -703,6 +735,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AC1779812B9707A10009EA87 /* GooglePlaces */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC1779802B9707A10009EA87 /* XCRemoteSwiftPackageReference "ios-places-sdk" */;
+			productName = GooglePlaces;
+		};
 		AC3D55022B7DD62A00BB10D8 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AC3D55012B7DD62A00BB10D8 /* XCRemoteSwiftPackageReference "realm-swift" */;

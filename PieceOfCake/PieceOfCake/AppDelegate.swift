@@ -7,6 +7,7 @@
 
 import UIKit
 import RealmSwift
+import GooglePlaces
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,6 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // Realm.Configuration.defaultConfiguration = configuration
+        
+        // MARK: Google API
+        GMSPlacesClient.provideAPIKey(APIKey.GoogleAPIKey)
         
         return true
     }
