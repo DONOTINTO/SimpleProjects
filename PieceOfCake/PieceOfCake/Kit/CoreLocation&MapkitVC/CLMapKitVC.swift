@@ -1,5 +1,5 @@
 //
-//  CLMapKitViewController.swift
+//  CLMapKitVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 1/25/24.
@@ -12,7 +12,7 @@ import MapKit
 // 위치 권한 설정
 // Info.plist > 'Privacy - Location When In Use Usage Description' Key 추가
 
-class CLMapKitViewController: UIViewController {
+class CLMapKitVC: UIViewController {
     
     // 맵 뷰 생성
     let mapView: MKMapView = MKMapView()
@@ -117,7 +117,7 @@ class CLMapKitViewController: UIViewController {
 }
 
 // Delegate 프로토콜 채택
-extension CLMapKitViewController: CLLocationManagerDelegate {
+extension CLMapKitVC: CLLocationManagerDelegate {
     // 사용자 위치 정보 업데이트 성공 시 호출
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
@@ -154,7 +154,7 @@ extension CLMapKitViewController: CLLocationManagerDelegate {
     }
 }
 
-extension CLMapKitViewController {
+extension CLMapKitVC {
     func configureUI() {
         self.view.addSubview(mapView)
         self.view.backgroundColor = .white

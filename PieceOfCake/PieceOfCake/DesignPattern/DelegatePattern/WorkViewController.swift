@@ -1,5 +1,5 @@
 //
-//  WorkViewController.swift
+//  WorkVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 1/10/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WorkViewController: UIViewController {
+class WorkVC: UIViewController {
     
     let mainLabel = UILabel()
     let mainButton = UIButton()
@@ -38,14 +38,14 @@ class WorkViewController: UIViewController {
     }
     
     @objc func mainButtonClicked(_ sender: UIButton) {
-        let nextVC = DelegateViewController()
+        let nextVC = DelegateVC()
         print("대리자 위임")
         nextVC.delegate = self
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
-extension WorkViewController: DelegateProtocol {
+extension WorkVC: DelegateProtocol {
     func changeLableText(text: String) {
         print("수신 완료")
         mainLabel.text = text

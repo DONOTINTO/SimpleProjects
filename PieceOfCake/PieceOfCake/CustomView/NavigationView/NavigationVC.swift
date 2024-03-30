@@ -1,5 +1,5 @@
 //
-//  NavigationViewController.swift
+//  NavigationVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 1/26/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NavigationViewController: UIViewController {
+class NavigationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

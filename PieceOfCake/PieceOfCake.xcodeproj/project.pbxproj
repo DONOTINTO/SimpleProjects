@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC0538422B6385CA006168FD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0538412B6385CA006168FD /* NavigationViewController.swift */; };
-		AC17797C2B96FE590009EA87 /* GooglePlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17797B2B96FE590009EA87 /* GooglePlaceViewController.swift */; };
-		AC17797F2B9700A30009EA87 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17797E2B9700A30009EA87 /* SearchResultsViewController.swift */; };
+		AC0538422B6385CA006168FD /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0538412B6385CA006168FD /* NavigationVC.swift */; };
+		AC0DC0282BB85E6500EA350E /* NSObject++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0DC0272BB85E6500EA350E /* NSObject++.swift */; };
+		AC17797C2B96FE590009EA87 /* GooglePlaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17797B2B96FE590009EA87 /* GooglePlaceVC.swift */; };
+		AC17797F2B9700A30009EA87 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17797E2B9700A30009EA87 /* SearchResultsVC.swift */; };
 		AC1779822B9707A10009EA87 /* GooglePlaces in Frameworks */ = {isa = PBXBuildFile; productRef = AC1779812B9707A10009EA87 /* GooglePlaces */; };
 		AC1779842B97086E0009EA87 /* GooglePlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1779832B97086E0009EA87 /* GooglePlaceManager.swift */; };
-		AC19A6D72B738C6400A0C752 /* CompositionCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6D62B738C6400A0C752 /* CompositionCollectionViewController.swift */; };
+		AC19A6D72B738C6400A0C752 /* CompositionalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6D62B738C6400A0C752 /* CompositionalVC.swift */; };
 		AC19A6D92B738CD700A0C752 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6D82B738CD700A0C752 /* CompositionalLayout.swift */; };
-		AC19A6DB2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DA2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift */; };
 		AC19A6DD2B748F6600A0C752 /* UIView++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DC2B748F6600A0C752 /* UIView++.swift */; };
-		AC19A6DF2B7496F500A0C752 /* HeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6DE2B7496F500A0C752 /* HeaderCollectionReusableView.swift */; };
 		AC19A6E82B74E24900A0C752 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC19A6E72B74E24900A0C752 /* ErrorType.swift */; };
 		AC24F2B52B8212B500DD1E19 /* UserInfoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2B42B8212B500DD1E19 /* UserInfoTable.swift */; };
 		AC24F2BB2B8217FE00DD1E19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BA2B8217FE00DD1E19 /* BaseViewController.swift */; };
@@ -24,29 +23,27 @@
 		AC24F2BF2B82197500DD1E19 /* ApplyBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */; };
 		AC24F2C12B82198C00DD1E19 /* ApplyBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */; };
 		AC24F2C82B837A4F00DD1E19 /* FileManager++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2C72B837A4F00DD1E19 /* FileManager++.swift */; };
-		AC24F2CB2B837EAB00DD1E19 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2CA2B837EAB00DD1E19 /* ImagePickerViewController.swift */; };
+		AC24F2CB2B837EAB00DD1E19 /* ImagePickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC24F2CA2B837EAB00DD1E19 /* ImagePickerVC.swift */; };
 		AC3D55002B7DD60B00BB10D8 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */; };
 		AC3D55032B7DD62A00BB10D8 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55022B7DD62A00BB10D8 /* Realm */; };
 		AC3D55052B7DD62A00BB10D8 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AC3D55042B7DD62A00BB10D8 /* RealmSwift */; };
-		AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */; };
+		AC913EAF2B6BAC5100B75565 /* ScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC913EAE2B6BAC5100B75565 /* ScrollVC.swift */; };
 		AC913EB22B6BADCB00B75565 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = AC913EB12B6BADCB00B75565 /* SnapKit */; };
 		AC99D5F92B8622400099CA04 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99D5F82B8622400099CA04 /* RealmViewController.swift */; };
 		AC99D5FB2B8628530099CA04 /* RealmDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99D5FA2B8628530099CA04 /* RealmDetailViewController.swift */; };
-		AC9AC6002B624CDE005A335A /* CLMapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */; };
+		AC9AC6002B624CDE005A335A /* CLMapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC5FF2B624CDE005A335A /* CLMapKitVC.swift */; };
 		AC9AC6042B62527C005A335A /* UIViewController++.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC6032B62527C005A335A /* UIViewController++.swift */; };
 		AC9AC6062B62591C005A335A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC6052B62591C005A335A /* UserDefaultManager.swift */; };
 		AC9AC6092B625AF1005A335A /* SceneDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9AC6082B625AF1005A335A /* SceneDelegateViewController.swift */; };
-		ACB4C5112B50F9FF00961FC8 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4C5102B50F9FF00961FC8 /* CollectionViewController.swift */; };
-		ACB4C5132B50FA2400961FC8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4C5122B50FA2400961FC8 /* CollectionViewCell.swift */; };
+		ACB4C5112B50F9FF00961FC8 /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB4C5102B50F9FF00961FC8 /* CollectionVC.swift */; };
 		ACB8D64B2B4B73D7005D9214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D64A2B4B73D7005D9214 /* AppDelegate.swift */; };
 		ACB8D64D2B4B73D7005D9214 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D64C2B4B73D7005D9214 /* SceneDelegate.swift */; };
-		ACB8D64F2B4B73D7005D9214 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D64E2B4B73D7005D9214 /* HomeViewController.swift */; };
+		ACB8D64F2B4B73D7005D9214 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D64E2B4B73D7005D9214 /* HomeVC.swift */; };
 		ACB8D6522B4B73D7005D9214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8D6502B4B73D7005D9214 /* Main.storyboard */; };
 		ACB8D6542B4B73D7005D9214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACB8D6532B4B73D7005D9214 /* Assets.xcassets */; };
 		ACB8D6572B4B73D7005D9214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACB8D6552B4B73D7005D9214 /* LaunchScreen.storyboard */; };
-		ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */; };
-		ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */; };
-		ACB8D6632B4BB33E005D9214 /* MyUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */; };
+		ACB8D65F2B4B822D005D9214 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D65E2B4B822D005D9214 /* ButtonVC.swift */; };
+		ACB8D6612B4BB0C1005D9214 /* TableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB8D6602B4BB0C1005D9214 /* TableVC.swift */; };
 		ACCDD4732B5E655F00034673 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = ACCDD4722B5E655F00034673 /* .gitignore */; };
 		ACCDD4752B5E659900034673 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDD4742B5E659900034673 /* APIKey.swift */; };
 		ACCDD4772B5E6A2900034673 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDD4762B5E6A2900034673 /* APIManager.swift */; };
@@ -57,15 +54,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC0538412B6385CA006168FD /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
-		AC17797B2B96FE590009EA87 /* GooglePlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceViewController.swift; sourceTree = "<group>"; };
-		AC17797E2B9700A30009EA87 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		AC0538412B6385CA006168FD /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		AC0DC0272BB85E6500EA350E /* NSObject++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject++.swift"; sourceTree = "<group>"; };
+		AC17797B2B96FE590009EA87 /* GooglePlaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceVC.swift; sourceTree = "<group>"; };
+		AC17797E2B9700A30009EA87 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
 		AC1779832B97086E0009EA87 /* GooglePlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlaceManager.swift; sourceTree = "<group>"; };
-		AC19A6D62B738C6400A0C752 /* CompositionCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionCollectionViewController.swift; sourceTree = "<group>"; };
+		AC19A6D62B738C6400A0C752 /* CompositionalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalVC.swift; sourceTree = "<group>"; };
 		AC19A6D82B738CD700A0C752 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
-		AC19A6DA2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalCollectionViewCell.swift; sourceTree = "<group>"; };
 		AC19A6DC2B748F6600A0C752 /* UIView++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView++.swift"; sourceTree = "<group>"; };
-		AC19A6DE2B7496F500A0C752 /* HeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		AC19A6E72B74E24900A0C752 /* ErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		AC24F2B42B8212B500DD1E19 /* UserInfoTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTable.swift; sourceTree = "<group>"; };
 		AC24F2BA2B8217FE00DD1E19 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -73,28 +69,26 @@
 		AC24F2BE2B82197500DD1E19 /* ApplyBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseVC.swift; sourceTree = "<group>"; };
 		AC24F2C02B82198C00DD1E19 /* ApplyBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyBaseView.swift; sourceTree = "<group>"; };
 		AC24F2C72B837A4F00DD1E19 /* FileManager++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager++.swift"; sourceTree = "<group>"; };
-		AC24F2CA2B837EAB00DD1E19 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
+		AC24F2CA2B837EAB00DD1E19 /* ImagePickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerVC.swift; sourceTree = "<group>"; };
 		AC3D54FF2B7DD60B00BB10D8 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
-		AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		AC913EAE2B6BAC5100B75565 /* ScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollVC.swift; sourceTree = "<group>"; };
 		AC99D5F82B8622400099CA04 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 		AC99D5FA2B8628530099CA04 /* RealmDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDetailViewController.swift; sourceTree = "<group>"; };
-		AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitViewController.swift; sourceTree = "<group>"; };
+		AC9AC5FF2B624CDE005A335A /* CLMapKitVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLMapKitVC.swift; sourceTree = "<group>"; };
 		AC9AC6032B62527C005A335A /* UIViewController++.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController++.swift"; sourceTree = "<group>"; };
 		AC9AC6052B62591C005A335A /* UserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
 		AC9AC6082B625AF1005A335A /* SceneDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateViewController.swift; sourceTree = "<group>"; };
-		ACB4C5102B50F9FF00961FC8 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		ACB4C5122B50FA2400961FC8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		ACB4C5102B50F9FF00961FC8 /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
 		ACB8D6472B4B73D7005D9214 /* PieceOfCake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PieceOfCake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACB8D64A2B4B73D7005D9214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACB8D64C2B4B73D7005D9214 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ACB8D64E2B4B73D7005D9214 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ACB8D64E2B4B73D7005D9214 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		ACB8D6512B4B73D7005D9214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACB8D6532B4B73D7005D9214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACB8D6562B4B73D7005D9214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACB8D6582B4B73D7005D9214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
-		ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITableViewController.swift; sourceTree = "<group>"; };
-		ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUITableViewCell.swift; sourceTree = "<group>"; };
+		ACB8D65E2B4B822D005D9214 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
+		ACB8D6602B4BB0C1005D9214 /* TableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVC.swift; sourceTree = "<group>"; };
 		ACCDD4722B5E655F00034673 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ACCDD4742B5E659900034673 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		ACCDD4762B5E6A2900034673 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -119,19 +113,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AC0538402B6385AC006168FD /* NavigationVC */ = {
+		AC0538402B6385AC006168FD /* NavigationView */ = {
 			isa = PBXGroup;
 			children = (
-				AC0538412B6385CA006168FD /* NavigationViewController.swift */,
+				AC0538412B6385CA006168FD /* NavigationVC.swift */,
 			);
-			path = NavigationVC;
+			path = NavigationView;
+			sourceTree = "<group>";
+		};
+		AC0DC0292BB8611200EA350E /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				AC17797D2B96FE5E0009EA87 /* GooglePlace */,
+				AC24F2C92B837E6700DD1E19 /* ImagePickerVC */,
+				AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		AC0DC02A2BB8617300EA350E /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		AC0DC02B2BB861E100EA350E /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				AC0538402B6385AC006168FD /* NavigationView */,
+				ACB4C50D2B50F9A700961FC8 /* ButtonView */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		AC0DC02E2BB8660700EA350E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AC24F2B72B82144400DD1E19 /* Realm */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 		AC17797D2B96FE5E0009EA87 /* GooglePlace */ = {
 			isa = PBXGroup;
 			children = (
-				AC17797B2B96FE590009EA87 /* GooglePlaceViewController.swift */,
-				AC17797E2B9700A30009EA87 /* SearchResultsViewController.swift */,
+				AC17797B2B96FE590009EA87 /* GooglePlaceVC.swift */,
+				AC17797E2B9700A30009EA87 /* SearchResultsVC.swift */,
 				AC1779832B97086E0009EA87 /* GooglePlaceManager.swift */,
 			);
 			path = GooglePlace;
@@ -140,10 +169,8 @@
 		AC19A6D32B738BFE00A0C752 /* CompositionLayout */ = {
 			isa = PBXGroup;
 			children = (
-				AC19A6D62B738C6400A0C752 /* CompositionCollectionViewController.swift */,
+				AC19A6D62B738C6400A0C752 /* CompositionalVC.swift */,
 				AC19A6D82B738CD700A0C752 /* CompositionalLayout.swift */,
-				AC19A6DA2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift */,
-				AC19A6DE2B7496F500A0C752 /* HeaderCollectionReusableView.swift */,
 			);
 			path = CompositionLayout;
 			sourceTree = "<group>";
@@ -199,7 +226,7 @@
 		AC24F2C92B837E6700DD1E19 /* ImagePickerVC */ = {
 			isa = PBXGroup;
 			children = (
-				AC24F2CA2B837EAB00DD1E19 /* ImagePickerViewController.swift */,
+				AC24F2CA2B837EAB00DD1E19 /* ImagePickerVC.swift */,
 			);
 			path = ImagePickerVC;
 			sourceTree = "<group>";
@@ -230,7 +257,7 @@
 		AC913EAD2B6BAC2300B75565 /* ScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				AC913EAE2B6BAC5100B75565 /* ScrollViewController.swift */,
+				AC913EAE2B6BAC5100B75565 /* ScrollVC.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -238,7 +265,7 @@
 		AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */ = {
 			isa = PBXGroup;
 			children = (
-				AC9AC5FF2B624CDE005A335A /* CLMapKitViewController.swift */,
+				AC9AC5FF2B624CDE005A335A /* CLMapKitVC.swift */,
 			);
 			path = "CoreLocation&MapkitVC";
 			sourceTree = "<group>";
@@ -246,6 +273,8 @@
 		AC9AC6022B62526B005A335A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				AC24F2C62B837A1200DD1E19 /* FileManager */,
+				AC0DC0272BB85E6500EA350E /* NSObject++.swift */,
 				AC9AC6032B62527C005A335A /* UIViewController++.swift */,
 				AC19A6DC2B748F6600A0C752 /* UIView++.swift */,
 			);
@@ -263,8 +292,8 @@
 		ACB4C50C2B50F99900961FC8 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				ACB4C5102B50F9FF00961FC8 /* CollectionViewController.swift */,
-				ACB4C5122B50FA2400961FC8 /* CollectionViewCell.swift */,
+				AC19A6D32B738BFE00A0C752 /* CompositionLayout */,
+				ACB4C5102B50F9FF00961FC8 /* CollectionVC.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -272,7 +301,7 @@
 		ACB4C50D2B50F9A700961FC8 /* ButtonView */ = {
 			isa = PBXGroup;
 			children = (
-				ACB8D65E2B4B822D005D9214 /* UIButtonViewController.swift */,
+				ACB8D65E2B4B822D005D9214 /* ButtonVC.swift */,
 			);
 			path = ButtonView;
 			sourceTree = "<group>";
@@ -300,24 +329,19 @@
 				AC24F2CD2B8462B400DD1E19 /* NotFinished */,
 				AC19A6E02B74A63F00A0C752 /* API */,
 				AC9AC6022B62526B005A335A /* Extension */,
-				AC24F2C62B837A1200DD1E19 /* FileManager */,
 				AC24F2B62B82143C00DD1E19 /* UserDefaults */,
 				AC24F2B82B82179D00DD1E19 /* BaseVC */,
-				AC24F2B72B82144400DD1E19 /* Realm */,
-				ACFE27002B4EE6DF002EF629 /* DelegatePattern */,
-				AC17797D2B96FE5E0009EA87 /* GooglePlace */,
-				AC24F2C92B837E6700DD1E19 /* ImagePickerVC */,
-				AC9AC6012B624CF7005A335A /* CoreLocation&MapkitVC */,
-				AC0538402B6385AC006168FD /* NavigationVC */,
+				AC0DC02E2BB8660700EA350E /* Library */,
+				AC0DC02A2BB8617300EA350E /* DesignPattern */,
+				AC0DC0292BB8611200EA350E /* Kit */,
 				AC913EAD2B6BAC2300B75565 /* ScrollView */,
-				AC19A6D32B738BFE00A0C752 /* CompositionLayout */,
 				ACB4C50C2B50F99900961FC8 /* CollectionView */,
 				ACB8D6642B4BB530005D9214 /* TableView */,
-				ACB4C50D2B50F9A700961FC8 /* ButtonView */,
-				ACB8D64E2B4B73D7005D9214 /* HomeViewController.swift */,
+				AC0DC02B2BB861E100EA350E /* CustomView */,
+				ACB8D64E2B4B73D7005D9214 /* HomeVC.swift */,
+				AC9AC6072B625ACB005A335A /* SceneDelegateVC */,
 				ACB8D64A2B4B73D7005D9214 /* AppDelegate.swift */,
 				ACB8D64C2B4B73D7005D9214 /* SceneDelegate.swift */,
-				AC9AC6072B625ACB005A335A /* SceneDelegateVC */,
 				ACB8D6502B4B73D7005D9214 /* Main.storyboard */,
 				ACB8D6532B4B73D7005D9214 /* Assets.xcassets */,
 				ACB8D6552B4B73D7005D9214 /* LaunchScreen.storyboard */,
@@ -329,8 +353,7 @@
 		ACB8D6642B4BB530005D9214 /* TableView */ = {
 			isa = PBXGroup;
 			children = (
-				ACB8D6602B4BB0C1005D9214 /* MyUITableViewController.swift */,
-				ACB8D6622B4BB33E005D9214 /* MyUITableViewCell.swift */,
+				ACB8D6602B4BB0C1005D9214 /* TableVC.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -430,41 +453,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0DC0282BB85E6500EA350E /* NSObject++.swift in Sources */,
 				AC24F2BD2B8218B100DD1E19 /* BaseView.swift in Sources */,
-				ACB8D65F2B4B822D005D9214 /* UIButtonViewController.swift in Sources */,
+				ACB8D65F2B4B822D005D9214 /* ButtonVC.swift in Sources */,
 				AC19A6E82B74E24900A0C752 /* ErrorType.swift in Sources */,
-				ACB8D64F2B4B73D7005D9214 /* HomeViewController.swift in Sources */,
+				ACB8D64F2B4B73D7005D9214 /* HomeVC.swift in Sources */,
 				AC9AC6062B62591C005A335A /* UserDefaultManager.swift in Sources */,
 				AC19A6DD2B748F6600A0C752 /* UIView++.swift in Sources */,
 				AC24F2BB2B8217FE00DD1E19 /* BaseViewController.swift in Sources */,
-				AC9AC6002B624CDE005A335A /* CLMapKitViewController.swift in Sources */,
-				AC19A6DB2B748E9A00A0C752 /* CompositionalCollectionViewCell.swift in Sources */,
+				AC9AC6002B624CDE005A335A /* CLMapKitVC.swift in Sources */,
 				AC24F2C12B82198C00DD1E19 /* ApplyBaseView.swift in Sources */,
 				ACB8D64B2B4B73D7005D9214 /* AppDelegate.swift in Sources */,
 				ACFE27022B4EE70A002EF629 /* DelegateViewController.swift in Sources */,
-				ACB4C5112B50F9FF00961FC8 /* CollectionViewController.swift in Sources */,
-				AC19A6D72B738C6400A0C752 /* CompositionCollectionViewController.swift in Sources */,
+				ACB4C5112B50F9FF00961FC8 /* CollectionVC.swift in Sources */,
+				AC19A6D72B738C6400A0C752 /* CompositionalVC.swift in Sources */,
 				AC9AC6092B625AF1005A335A /* SceneDelegateViewController.swift in Sources */,
-				ACB8D6632B4BB33E005D9214 /* MyUITableViewCell.swift in Sources */,
 				AC3D55002B7DD60B00BB10D8 /* RealmManager.swift in Sources */,
-				ACB8D6612B4BB0C1005D9214 /* MyUITableViewController.swift in Sources */,
+				ACB8D6612B4BB0C1005D9214 /* TableVC.swift in Sources */,
 				AC24F2B52B8212B500DD1E19 /* UserInfoTable.swift in Sources */,
 				AC24F2BF2B82197500DD1E19 /* ApplyBaseVC.swift in Sources */,
 				ACFE27062B4EE758002EF629 /* WorkViewController.swift in Sources */,
 				ACFE27042B4EE71A002EF629 /* DelegateProtocol.swift in Sources */,
-				AC0538422B6385CA006168FD /* NavigationViewController.swift in Sources */,
-				AC19A6DF2B7496F500A0C752 /* HeaderCollectionReusableView.swift in Sources */,
+				AC0538422B6385CA006168FD /* NavigationVC.swift in Sources */,
 				AC19A6D92B738CD700A0C752 /* CompositionalLayout.swift in Sources */,
 				ACB8D64D2B4B73D7005D9214 /* SceneDelegate.swift in Sources */,
 				ACCDD4772B5E6A2900034673 /* APIManager.swift in Sources */,
-				AC24F2CB2B837EAB00DD1E19 /* ImagePickerViewController.swift in Sources */,
+				AC24F2CB2B837EAB00DD1E19 /* ImagePickerVC.swift in Sources */,
 				AC99D5FB2B8628530099CA04 /* RealmDetailViewController.swift in Sources */,
-				AC17797F2B9700A30009EA87 /* SearchResultsViewController.swift in Sources */,
+				AC17797F2B9700A30009EA87 /* SearchResultsVC.swift in Sources */,
 				ACCDD4752B5E659900034673 /* APIKey.swift in Sources */,
-				ACB4C5132B50FA2400961FC8 /* CollectionViewCell.swift in Sources */,
-				AC17797C2B96FE590009EA87 /* GooglePlaceViewController.swift in Sources */,
+				AC17797C2B96FE590009EA87 /* GooglePlaceVC.swift in Sources */,
 				AC99D5F92B8622400099CA04 /* RealmViewController.swift in Sources */,
-				AC913EAF2B6BAC5100B75565 /* ScrollViewController.swift in Sources */,
+				AC913EAF2B6BAC5100B75565 /* ScrollVC.swift in Sources */,
 				AC9AC6042B62527C005A335A /* UIViewController++.swift in Sources */,
 				AC1779842B97086E0009EA87 /* GooglePlaceManager.swift in Sources */,
 				AC24F2C82B837A4F00DD1E19 /* FileManager++.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  MyUITableViewController.swift
+//  TableVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 1/8/24.
@@ -18,7 +18,7 @@ enum MySection: String, CaseIterable {
     case c = "다"
 }
 
-class MyUITableViewController: UIViewController {
+class TableVC: UIViewController {
     let tableView = UITableView()
     var dataList: [MyData] = [MyData(sectionData: .a, rowData: ["1", "1", "1", "1"]), MyData(sectionData: .b, rowData: ["2", "2", "2", "2", "2"]), MyData(sectionData: .c, rowData: ["3", "3", "3", "3", "3", "3", "3"])]
     
@@ -64,7 +64,7 @@ class MyUITableViewController: UIViewController {
     }
 }
 
-extension MyUITableViewController: UITableViewDelegate, UITableViewDataSource {
+extension TableVC: UITableViewDelegate, UITableViewDataSource {
     // 섹션 갯수
     func numberOfSections(in tableView: UITableView) -> Int {
         return dataList.count
@@ -179,3 +179,15 @@ extension MyUITableViewController: UITableViewDelegate, UITableViewDataSource {
     // }
 }
                                     
+class MyUITableViewCell: UITableViewCell {
+    let title = UILabel()
+
+    func constraint() {
+            self.contentView.addSubview(title)
+            title.translatesAutoresizingMaskIntoConstraints = false
+        
+        title.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 10).isActive = true
+        title.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor).isActive = true
+        title.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: 10).isActive = true
+    }
+}

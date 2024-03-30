@@ -1,5 +1,5 @@
 //
-//  ScrollViewController.swift
+//  ScrollVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 2/1/24.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ScrollViewController: UIViewController {
+class ScrollVC: UIViewController {
 
     // 1. 스크롤 뷰 생성
     let scrollView = UIScrollView()

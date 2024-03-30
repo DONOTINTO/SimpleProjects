@@ -1,5 +1,5 @@
 //
-//  ImagePickerViewController.swift
+//  ImagePickerVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 2/19/24.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ImagePickerViewController: UIViewController {
+class ImagePickerVC: UIViewController {
     
     var imagePickerButton = UIButton()
     var pickerImageView = UIImageView()
@@ -31,7 +31,7 @@ class ImagePickerViewController: UIViewController {
     }
 }
 
-extension ImagePickerViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+extension ImagePickerVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     // image Picker를 cancel했을 때
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -53,7 +53,7 @@ extension ImagePickerViewController: UIImagePickerControllerDelegate, UINavigati
 }
 
 
-extension ImagePickerViewController {
+extension ImagePickerVC {
     func configureHierarchy() {
         [imagePickerButton, pickerImageView].forEach {
             view.addSubview($0)

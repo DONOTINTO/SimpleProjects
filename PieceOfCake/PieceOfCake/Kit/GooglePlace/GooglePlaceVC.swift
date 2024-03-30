@@ -1,5 +1,5 @@
 //
-//  GooglePlaceViewController.swift
+//  GooglePlaceVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 3/5/24.
@@ -9,10 +9,10 @@ import UIKit
 import SnapKit
 import MapKit
 
-class GooglePlaceViewController: UIViewController {
+class GooglePlaceVC: UIViewController {
     
     let mapView = MKMapView()
-    let searchController = UISearchController(searchResultsController: SearchResultsViewController())
+    let searchController = UISearchController(searchResultsController: SearchResultsVC())
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +31,12 @@ class GooglePlaceViewController: UIViewController {
 
 }
 
-extension GooglePlaceViewController: UISearchResultsUpdating {
+extension GooglePlaceVC: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         
         guard let query = searchController.searchBar.text,
               !query.trimmingCharacters(in: .whitespaces).isEmpty,
-              let resultVC = searchController.searchResultsController as? SearchResultsViewController  else {
+              let resultVC = searchController.searchResultsController as? SearchResultsVC  else {
             return
         }
         
@@ -58,7 +58,7 @@ extension GooglePlaceViewController: UISearchResultsUpdating {
     
 }
 
-extension GooglePlaceViewController {
+extension GooglePlaceVC {
     
     func configureHierarchy() {
         view.addSubview(mapView)

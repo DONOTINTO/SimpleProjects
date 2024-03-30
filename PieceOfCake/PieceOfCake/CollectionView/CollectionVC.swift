@@ -1,5 +1,5 @@
 //
-//  CollectionViewController.swift
+//  CollectionVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 1/12/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CollectionViewController: UIViewController {
+class CollectionVC: UIViewController {
 
     var myCollectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
@@ -62,7 +62,7 @@ class CollectionViewController: UIViewController {
     }
 }
 
-extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CollectionVC: UICollectionViewDelegate, UICollectionViewDataSource {
     // CollectionView의 섹션 별 item 개수 설정
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 100
@@ -84,7 +84,7 @@ extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDa
     
 }
 
-extension CollectionViewController {
+extension CollectionVC {
     func designUI() {
         self.navigationController?.navigationBar.tintColor = .black
         
@@ -102,4 +102,8 @@ extension CollectionViewController {
         myCollectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
 
+}
+
+class CollectionViewCell: UICollectionViewCell {
+    
 }

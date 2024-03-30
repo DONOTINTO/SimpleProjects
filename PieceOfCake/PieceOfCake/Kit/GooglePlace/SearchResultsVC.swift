@@ -1,5 +1,5 @@
 //
-//  SearchResultsViewController.swift
+//  SearchResultsVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 3/5/24.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class SearchResultsViewController: UIViewController {
+class SearchResultsVC: UIViewController {
     
     private let tableView = UITableView()
     
@@ -42,7 +42,7 @@ class SearchResultsViewController: UIViewController {
     }
 }
 
-extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSource {
+extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return places.count

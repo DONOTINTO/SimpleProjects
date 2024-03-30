@@ -1,5 +1,5 @@
 //
-//  CompositionCollectionViewController.swift
+//  CompositionalVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 2/7/24.
@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CompositionCollectionViewController: UIViewController {
+class CompositionalVC: UIViewController {
 
     // CompositionalLayout 설정
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: CompositionalLayout.create())
@@ -35,7 +35,7 @@ class CompositionCollectionViewController: UIViewController {
     
 }
 
-extension CompositionCollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension CompositionalVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     // Section 갯수 설정
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -108,5 +108,56 @@ extension CompositionCollectionViewController: UICollectionViewDelegate, UIColle
         default:
             return UICollectionReusableView()
         }
+    }
+}
+
+class CompositionalCollectionViewCell: UICollectionViewCell {
+    
+    let myView = UIView()
+    let label = UILabel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        self.contentView.addSubview(myView)
+        self.contentView.addSubview(label)
+        
+        self.label.text = "11111111"
+        
+        myView.snp.makeConstraints {
+            $0.top.horizontalEdges.equalTo(self.contentView)
+            $0.height.equalTo(200)
+        }
+        
+        label.snp.makeConstraints {
+            $0.top.equalTo(myView.snp.bottom)
+            $0.horizontalEdges.bottom.equalTo(self.contentView)
+        }
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
+}
+
+class HeaderCollectionReusableView: UICollectionReusableView {
+    
+    let titleLabel = UILabel()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        titleLabel.backgroundColor = .systemOrange
+        
+        self.addSubview(titleLabel)
+        
+        titleLabel.snp.makeConstraints {
+            $0.edges.equalTo(self).inset(10)
+        }
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
 }

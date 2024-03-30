@@ -1,5 +1,5 @@
 //
-//  DelegateViewController.swift
+//  DelegateVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 1/10/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DelegateViewController: UIViewController {
+class DelegateVC: UIViewController {
     let mainButton = UIButton()
     var delegate: DelegateProtocol?
 

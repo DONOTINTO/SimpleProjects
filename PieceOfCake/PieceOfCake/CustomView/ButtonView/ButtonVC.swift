@@ -1,5 +1,5 @@
 //
-//  UIButtonViewController.swift
+//  ButtonVC.swift
 //  PieceOfCake
 //
 //  Created by 이중엽 on 1/8/24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UIButtonViewController: UIViewController {
+class ButtonVC: UIViewController {
     var button = UIButton()
     
     override func viewDidLoad() {
