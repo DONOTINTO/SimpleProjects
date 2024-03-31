@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DelegateVC: UIViewController {
+class WorkVC: UIViewController {
     let mainButton = UIButton()
     var delegate: DelegateProtocol?
 
@@ -30,6 +30,6 @@ class DelegateVC: UIViewController {
     
     @objc func mainButtonClicked(_ sender: UIButton) {
         print("실행 요청")
-        delegate?.changeLableText(text: "가나다")
+        delegate?.changeLableText(text: "수신 완료")
     }
 }

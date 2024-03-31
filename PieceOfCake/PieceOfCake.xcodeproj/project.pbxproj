@@ -48,9 +48,9 @@
 		ACCDD4752B5E659900034673 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDD4742B5E659900034673 /* APIKey.swift */; };
 		ACCDD4772B5E6A2900034673 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCDD4762B5E6A2900034673 /* APIManager.swift */; };
 		ACCDD47B2B5E6A5600034673 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ACCDD47A2B5E6A5600034673 /* Alamofire */; };
-		ACFE27022B4EE70A002EF629 /* DelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27012B4EE70A002EF629 /* DelegateViewController.swift */; };
+		ACFE27022B4EE70A002EF629 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27012B4EE70A002EF629 /* WorkVC.swift */; };
 		ACFE27042B4EE71A002EF629 /* DelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27032B4EE71A002EF629 /* DelegateProtocol.swift */; };
-		ACFE27062B4EE758002EF629 /* WorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27052B4EE758002EF629 /* WorkViewController.swift */; };
+		ACFE27062B4EE758002EF629 /* DelegateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFE27052B4EE758002EF629 /* DelegateVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,9 +92,9 @@
 		ACCDD4722B5E655F00034673 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		ACCDD4742B5E659900034673 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		ACCDD4762B5E6A2900034673 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
-		ACFE27012B4EE70A002EF629 /* DelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateViewController.swift; sourceTree = "<group>"; };
+		ACFE27012B4EE70A002EF629 /* WorkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; };
 		ACFE27032B4EE71A002EF629 /* DelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateProtocol.swift; sourceTree = "<group>"; };
-		ACFE27052B4EE758002EF629 /* WorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkViewController.swift; sourceTree = "<group>"; };
+		ACFE27052B4EE758002EF629 /* DelegateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,8 +361,8 @@
 		ACFE27002B4EE6DF002EF629 /* DelegatePattern */ = {
 			isa = PBXGroup;
 			children = (
-				ACFE27012B4EE70A002EF629 /* DelegateViewController.swift */,
-				ACFE27052B4EE758002EF629 /* WorkViewController.swift */,
+				ACFE27012B4EE70A002EF629 /* WorkVC.swift */,
+				ACFE27052B4EE758002EF629 /* DelegateVC.swift */,
 				ACFE27032B4EE71A002EF629 /* DelegateProtocol.swift */,
 			);
 			path = DelegatePattern;
@@ -464,7 +464,7 @@
 				AC9AC6002B624CDE005A335A /* CLMapKitVC.swift in Sources */,
 				AC24F2C12B82198C00DD1E19 /* ApplyBaseView.swift in Sources */,
 				ACB8D64B2B4B73D7005D9214 /* AppDelegate.swift in Sources */,
-				ACFE27022B4EE70A002EF629 /* DelegateViewController.swift in Sources */,
+				ACFE27022B4EE70A002EF629 /* WorkVC.swift in Sources */,
 				ACB4C5112B50F9FF00961FC8 /* CollectionVC.swift in Sources */,
 				AC19A6D72B738C6400A0C752 /* CompositionalVC.swift in Sources */,
 				AC9AC6092B625AF1005A335A /* SceneDelegateViewController.swift in Sources */,
@@ -472,7 +472,7 @@
 				ACB8D6612B4BB0C1005D9214 /* TableVC.swift in Sources */,
 				AC24F2B52B8212B500DD1E19 /* UserInfoTable.swift in Sources */,
 				AC24F2BF2B82197500DD1E19 /* ApplyBaseVC.swift in Sources */,
-				ACFE27062B4EE758002EF629 /* WorkViewController.swift in Sources */,
+				ACFE27062B4EE758002EF629 /* DelegateVC.swift in Sources */,
 				ACFE27042B4EE71A002EF629 /* DelegateProtocol.swift in Sources */,
 				AC0538422B6385CA006168FD /* NavigationVC.swift in Sources */,
 				AC19A6D92B738CD700A0C752 /* CompositionalLayout.swift in Sources */,

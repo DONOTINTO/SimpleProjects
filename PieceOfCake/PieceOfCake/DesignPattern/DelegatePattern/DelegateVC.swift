@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WorkVC: UIViewController {
+class DelegateVC: UIViewController {
     
     let mainLabel = UILabel()
     let mainButton = UIButton()
@@ -38,14 +38,14 @@ class WorkVC: UIViewController {
     }
     
     @objc func mainButtonClicked(_ sender: UIButton) {
-        let nextVC = DelegateVC()
+        let nextVC = WorkVC()
         print("대리자 위임")
         nextVC.delegate = self
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
-extension WorkVC: DelegateProtocol {
+extension DelegateVC: DelegateProtocol {
     func changeLableText(text: String) {
         print("수신 완료")
         mainLabel.text = text
