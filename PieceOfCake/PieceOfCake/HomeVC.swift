@@ -104,6 +104,7 @@ enum HomeTableViewSection: Int, CaseIterable {
     case rxSwift
     case designPattern
     case firebase
+    case lifeCycle
     
     var title: String {
         switch self {
@@ -125,6 +126,8 @@ enum HomeTableViewSection: Int, CaseIterable {
             return "designPattern"
         case .firebase:
             return "firebase"
+        case .lifeCycle:
+            return "lifeCycle"
         }
     }
     
@@ -148,6 +151,8 @@ enum HomeTableViewSection: Int, CaseIterable {
             return [DelegateVC()]
         case .firebase:
             return []
+        case .lifeCycle:
+            return [LifeCycleHomeViewController()]
         }
     }
 }
